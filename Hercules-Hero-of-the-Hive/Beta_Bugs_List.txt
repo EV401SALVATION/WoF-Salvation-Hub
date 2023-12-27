@@ -1,0 +1,5 @@
+Bugs:
+- On transfer from IW West to IW South the player can walk into a lamp.
+- Right after finishing the battle with the median guard, the player can't interact with and can walk down through the downed median guard interact.
+
+Potential Bugs:

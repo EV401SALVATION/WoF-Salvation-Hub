@@ -1,0 +1,60 @@
+Interactive Objects and Cutscenes:
+    - Remember to set auto advance to false in the next interact step after setting it to true in the previous!
+
+pos() Function:
+    - Multiplies the argument value by the tile size, allowing the user to set positions and sizes based on how many tiles instead of exact pixel measurements
+    - pos(0) is the same as 0 and either works
+
+When adding new areas:
+    - Add branches for the vars in their respective tile setup functions and call the interacts one in the setupInteracts funciton.
+    - Add new line in the setupAreaData function for the new area.
+
+Testing Cheats:
+
+
+
+Testing Waypoint:
+    The testing waypoint is a feature designed to help make testing later parts of the game possible without having to play through a large portion of it. It is enabled
+    via setting the testingKeys boolean variable to true, and disabled when the variable is set to false. When enabled, pressing the Y key teleports the player to the
+    specified area and position. This can be set via the testingWaypoint variable (a string value with the full name of the area with capitalized first letters and spaces) and the testingWaypointX and testingWaypointY variables (number values that utilize the pos() function).
+    NOTE: There may not always be a branch in the fadeAction() function of the Fade object for the area being teleported to. Remember to keep this in mind when setting
+    the testing waypoint.
+
+
+- Remember to add EVERY area in which a battle can take place to the set background portion of the Battle object's setup function!
+
+
+Interact Building Options:
+
+* beginInteract()
+* endInteract()
+* changeDirection()
+* setStep()
+* incrementStep()
+* setDebounce()
+* setMove()
+* createTextbox()
+* clearTextbox()
+* transferPlayer()
+* changeInteract()
+* changeTexture()
+* destroyInteract()
+* playSound()
+* changePlayerHealth()
+* autoAdvanceStep()
+* startBattle()
+* updateMission()
+* movePlayer()
+* endPlayerMove()
+* createInteract()
+
+* changeDirection()
+* fadeOut()
+* fadeIn()
+* fadeText()
+* setCheckpoint()
+
+* selfSwitch =
+* GS_ +=
+
+* if else
